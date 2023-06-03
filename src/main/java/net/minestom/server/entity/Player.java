@@ -1410,13 +1410,6 @@ public class Player extends LivingEntity implements CommandSender, Localizable, 
         return heldSlot;
     }
 
-    public void setTeam(Team team) {
-        super.setTeam(team);
-        if (team != null) {
-            PacketUtils.broadcastPacket(team.createTeamsCreationPacket());
-        }
-    }
-
     /**
      * Changes the tag below the name.
      *

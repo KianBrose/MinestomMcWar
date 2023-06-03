@@ -532,7 +532,7 @@ public class Entity implements Viewable, Tickable, Schedulable, Snapshotable, Ev
             velocityTick();
 
             // handle block contacts
-            touchTick();
+            //touchTick();
 
             handleVoid();
 
